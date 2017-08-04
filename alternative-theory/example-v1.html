@@ -1,0 +1,31 @@
+<!--  main container width and max-height needs to match the natural dimensions of the image -->
+<div style="width:300px; max-height:300px; margin:0 auto; overflow:hidden; font-family:sans-serif;">
+
+<!-- an image is being linked, and has no semantic value in this context, therefore we add a title to describe the link -->
+<!-- instruct screen-readers to skip the image, by assigning aria-hidden="true" -->
+<!-- break the image source to reveal alternate content -->
+<!-- note: most browsers will display a broken image icon -->
+  <a href="https://www.example.com/images/are/enabled" title="description">
+    <img src="http://www.fillmurray.com/300/300" style="display:block;" aria-hidden="true" alt="" border="0">
+  </a>
+
+<!--[if mso]><!-->
+<!--  assign alt-content container role="img" to instruct screen-readers to treat  a graphic content -->
+  <div style="width:300px; min-height:300px; text-align:center;" role="img">
+
+    <span style="color:#ff3288;font-size:35px;font-weight:normal;">What</span><br>
+    <span style="color:#e83634;font-size:40px;font-weight:bold;">a</span><br>
+    <span style="color:#ff4628;font-size:32px;font-weight:normal;">wonderful</span><br>
+    <span style="color:#e85119;font-size:30px;font-weight:bold;">alterative</span><br>
+    <span style="color:#94603d;font-size:50px;font-weight:bold;">image</span><br>
+
+     <a style="color:#E83634;" href="https://www.example.com/images/are/NOT/enabled">
+       <span style="color:#e83634;font-size:35px;">
+         world
+       </span>
+     </a>
+
+  </div>
+<!--<![endif]-->
+
+</div>
